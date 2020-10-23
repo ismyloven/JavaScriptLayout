@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script
+			src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"></script>
+	<title>Сайт</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../dist/css/main.css">
+
+</head>
+<body>
+<header>
+	<div class="sitetoolbar">
+		<div>
+			<a class="sitetoolbar__link sitetoolbar__link_logo" href="/">
+				<object type="image/svg+xml" class="sitetoolbar__logo sitetoolbar__logo_normal"
+								data="https://learn.javascript.ru/img/sitetoolbar__logo_ru.svg"
+								style="left: 60px;"></object>
+				<img class="sitetoolbar__logo sitetoolbar__logo_normal" src="/img/sitetoolbar__logo_ru.svg" width="171" alt=""
+						 role="presentation" style="visibility: hidden;">
+			</a>
+
+		</div>
+		<div>
+			<nav class="sitetoolbar__sections">
+				<ul class="sitetoolbar__sections-list">
+					<li class="sitetoolbar__section sitetoolbar__section_current"><a class="sitetoolbar__link"
+																																					 href="/">Учебник</a>
+					</li>
+					<li class="sitetoolbar__section"><a class="sitetoolbar__link" href="/courses">Курсы</a></li>
+					<li class="sitetoolbar__section"><a class="sitetoolbar__link" href="https://javascript.ru/forum/">Форум</a>
+					</li>
+					<li class="sitetoolbar__section"><a class="sitetoolbar__link" href="https://es5.javascript.ru">ES5</a></li>
+					<li class="sitetoolbar__section"><a class="sitetoolbar__link" href="/quiz">Тесты знаний</a></li>
+					<li class="sitetoolbar__section sitetoolbar__section_dropdown">
+						<button class="sitetoolbar__dropdown-button headmenu__nolink" data-dropdown-toggler="">Скринкасты</button>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="button_currency">
+			<a class="btn btn-3"><span class="btn-text">Купить EPUB/PDF</span></a>
+		</div>
+	</div>
+<hr class="line">
+	<div>
+	<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+	<label class="btn-menu" for="hmt">
+		<span class="first"></span>
+		<span class="second"></span>
+		<span class="third"></span>
+	</label>
+	<ul class="hidden-menu">
+		<li class="hidden-menu_list">Раздел</li>
+		<li class="hidden-menu_list"><a href="">Введение</a></li>
+		<li class="hidden-menu_list">Навигация по уроку</li>
+		<li class="hidden-menu_list"><a href="">Что такое JavaScript?</a></li>
+		<li class="hidden-menu_list"><a href="">Что может JavaScript в браузере? </a></li>
+		<li class="hidden-menu_list"><a href="">Что делает JavaScript особенным? </a></li>
+		<li class="hidden-menu_list"><a href="">Языки «над» JavaScript </a></li>
+		<li class="hidden-menu_list"><a href="">Итого </a></li>
+		<li class="hidden-menu_list"><a href="">Комментарии </a></li>
+		<li class="hidden-menu_list">Поделиться</li>
+		<ul class="icons">
+			<li><a href="#" class="icons__link icons--twitter" aria-label="ссылка на фейсбук"></a></li>
+			<li><a href="#" class="icons__link icons--facebook" aria-label="ссылка на гугл"></a></li>
+			<li><a href="#" class="icons__link icons--vk" aria-label="ссылка на вконтакте"></a></li>
+		</ul>
+		<li class="hidden-menu_list"><a href="">Редактировать на GitHub </a></li>
+
+
+
+	</ul>
+	</div>
+
+
+</header>
+
+
+</body>
+</html>
