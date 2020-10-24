@@ -544,6 +544,9 @@ a {
 .main__text {
   flex-wrap: wrap; }
 
+.main__header--caption {
+  color: black; }
+
 .main__header {
   font-weight: bold;
   padding-right: 370px;
@@ -560,6 +563,11 @@ a {
   width: 725px;
   height: 570px; }
 
+.main__header--textborder {
+  border: 1px solid darkgrey;
+  width: 700px;
+  padding: 20px; }
+
 .footer {
   background-color: #eee;
   height: 50px;
@@ -568,7 +576,7 @@ a {
 .page-footer {
   padding-left: 200px; }
 
-a:hover {
+.page-footer__link:hover {
   color: #b20600;
   border-bottom: 1px solid red; }
 
