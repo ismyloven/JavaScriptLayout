@@ -1,0 +1,32 @@
+.container {
+  max-width: 1410px;
+  margin: 0 auto;
+
+}
+
+.main__text{
+  flex-wrap: wrap;
+
+}
+
+.main__header {
+  font-weight: bold;
+  padding-right: 370px;
+  font-size: 34px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.main__header--text{
+  padding-left: 340px;
+
+}
+.main__header--marktext{
+
+}
+ .image{
+   background-image: url("../image/maintext/img/main.png");
+   width: 725px;
+   height: 570px;
+ }
+
