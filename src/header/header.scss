@@ -12,7 +12,9 @@ a {
   text-decoration: none;
   color: #7f7171;
 }
-
+.sitetoolbar__logo_normal{
+  left: 60px;
+}
 .sitetoolbar{
   display: flex;
   padding-left: 70px;
@@ -161,18 +163,73 @@ a {
   font-size: 16px;
 
 }
-.tutorial-progress{
+.main__header--line{
   position: fixed;
   top: 60px;
   left: 0px;
   z-index: 54;
-  background: white;
+  background: gray;
   margin: 0px;
-  width: 1519px;
+  width: 100%;
   height: 3px;
 }
 
 
+@media (max-width: 1208px) {
+  .sitetoolbar{
+    display: flex;
+    padding-inline-start: 0;
+  }
 
+  .main__text{
+    max-width: 950px;
+  }
+  .page-footer__list{
+    flex-flow: wrap;
+  }
+}
+@media (max-width: 1060px) {
+  .sitetoolbar__sections-list{
+    flex-flow: row;
+  }
 
+  .main__header--text{
+    margin-left: -90px;
+  }
+  .main__text{
+    max-width: 650px;
+  }
+}
+@media (max-width: 900px) {
+  .sitetoolbar{
+    display: flex;
+    padding-inline-start: 0;
+  }
+}
+
+@media (max-width: 840px) {
+  .sitetoolbar__sections-list, .button_currency{
+    display: none;
+  }
+  .btn-menu{
+    margin-top: -60px;
+
+  }
+  .btn-menu span{
+    left: -60px;
+    top: -5px;
+  }
+  .sitetoolbar__logo_normal{
+    margin-left: 100px;
+  }
+  .hidden-menu{
+    visibility: hidden;
+  }
+  .main__header{
+    margin-left: -312px;
+  }
+  .main__header--text{
+    margin-left: -312px;
+  }
+}
 
