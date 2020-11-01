@@ -223,10 +223,7 @@ a {
   .sitetoolbar__sections-list{
     flex-flow: row;
   }
-
-  .main__header--text{
-    margin-left: 1px;
-  }
+  
   .main__text{
     max-width: 650px;
   }
@@ -256,10 +253,8 @@ a {
   .hidden-menu{
     visibility: hidden;
   }
-  .main__header{
-    margin-left: -312px;
-  }
+
   .main__header--text{
-    margin-left: 1px;
+    margin-left: -100px;
   }
 }
