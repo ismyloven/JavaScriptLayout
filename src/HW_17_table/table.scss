@@ -1,0 +1,25 @@
+td {
+ padding: 10px;
+  border: 2px solid #000;
+  font-size: 0;
+
+}
+td:hover {
+  background: yellow;
+  font-size: 20px;
+}
+
+.table_class{
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+
+}
+
+ table {
+    margin: auto;
+ }
+
+.input_class{
+  width: 50px;
+}

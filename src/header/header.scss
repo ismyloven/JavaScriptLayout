@@ -149,19 +149,19 @@ a {
 
 
 }
-.button_currency{
-  padding-left: 500px;
+.timer {
+  width: 80px;
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid red;
+  border-radius: 36px;
+  margin: 20px;
 }
-.btn-3:hover:after {
-  height:100px;
-  width: 170px;
-  border-radius: 20px;
+.timer:hover {
   background: #e05850;
 
 }
-.btn-text:hover{
-  color: white;
-}
+
 
 * {box-sizing: border-box;}
 .sitetoolbar__form {
