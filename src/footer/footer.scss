@@ -9,7 +9,7 @@
 }
 
 .page-footer{
-  padding-left: 300px;
+  padding-left: 250px;
 }
 .page-footer__link:hover {
     color: #b20600;
@@ -39,4 +39,16 @@ ul {
 li {
   display: list-item;
   text-align: -webkit-match-parent;
+}
+
+.lastdate{
+  padding-left: 20px;
+}
+.thedate{
+  width: 80px;
+  height: 25px;
+  padding-left: 7px;
+  border: 1px solid red;
+  border-radius: 36px;
+
 }
