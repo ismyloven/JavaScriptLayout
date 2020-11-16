@@ -6,7 +6,7 @@ td {
 }
 td:hover {
   background: yellow;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .table_class{
@@ -22,4 +22,12 @@ td:hover {
 
 .input_class{
   width: 50px;
+}
+
+.spoiler_title{
+  cursor: pointer;
+}
+.spoiler_body{
+  display: none;
+  background: red;
 }

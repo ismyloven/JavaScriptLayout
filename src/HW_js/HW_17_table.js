@@ -5,10 +5,11 @@ function addTable() {
 	var firstTable = document.querySelector("table");
 	var rows = numRows.value;
 	var columns = numColumns.value;
+	var newTable;
 
 	var  table = document.createElement("table");
 	table.setAttribute("border", "1");
-	table.setAttribute("width", 100);
+	table.setAttribute("width", 250);
 	table.setAttribute("height", 100);
 
 	for (var i = 0; i < columns; i++) {
@@ -26,7 +27,7 @@ function addTable() {
 	if (firstTable == null) {
 		return body.appendChild(table);
 	} else {
-		var newTable = body.appendChild(table);
+		newTable = body.appendChild(table);
 		return document.body.replaceChild(newTable, firstTable);
 	}
 }
