@@ -7,10 +7,10 @@ function addTable() {
 	var columns = numColumns.value;
 	var newTable;
 
-	var  table = document.createElement("table");
+	var table = document.createElement("table");
 	table.setAttribute("border", "1");
-	table.setAttribute("width", 250);
-	table.setAttribute("height", 100);
+	table.setAttribute("width", 600);
+	table.setAttribute("height", 200);
 
 	for (var i = 0; i < columns; i++) {
 		var tr = document.createElement("tr");
@@ -32,4 +32,18 @@ function addTable() {
 	}
 }
 
+// first clicker
 
+let button = document.querySelector(".firstcliker");
+let text = document.querySelector(".table_class");
+
+
+button.addEventListener("click", handler);
+
+function handler() {
+	if (text.style.display == "block") {
+		text.style.display = "none";
+	} else {
+		text.style.display = "block";
+	}
+}
