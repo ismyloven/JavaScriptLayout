@@ -14,8 +14,6 @@ function userTimer() {
 
 	}
 
-	secundomer.innerHTML=`${count}`;
-
 
 	if (count > 60){
 		minuteuser++;
@@ -23,7 +21,6 @@ function userTimer() {
 		return count =0;
 
 	}
-	secundomer.innerHTML=`${minuteuser}:${count}`;
 
 	if (minuteuser > 60){
 
@@ -37,7 +34,6 @@ function userTimer() {
 
 }
 
-
 secundomer.addEventListener("mouseover", stop);
 secundomer.addEventListener("mouseout", start);
 
@@ -50,15 +46,36 @@ function start (){
 	counter = setInterval(userTimer, 1000);
 }
 
+
 document.addEventListener('keydown', function(event) {
 	const key = event.key;
 	if (key === "Escape") {
+		console.log("salam");
+
 		count = 0;
 
 	}
 });
 
+
 secundomer.removeEventListener("mouseover",listener, stop);
 secundomer.removeEventListener("mouseout",listener, start);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
