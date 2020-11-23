@@ -41,9 +41,36 @@ let text = document.querySelector(".table_class");
 button.addEventListener("click", handler);
 
 function handler() {
+
 	if (text.style.display == "block") {
 		text.style.display = "none";
+
 	} else {
 		text.style.display = "block";
 	}
 }
+
+
+// second clicker About JS
+
+let button2 = document.querySelector(".secondcliker");
+let text2 = document.querySelector(".container");
+
+
+button2.addEventListener("click", handler2);
+
+function handler2() {
+
+	if (text2.style.display == "block") {
+		text2.style.display = "none";
+
+	} else {
+		text2.style.display = "block";
+	}
+}
+
+
+
+
+
+

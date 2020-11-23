@@ -29,13 +29,13 @@
 			<div>
 				<nav class="sitetoolbar__sections">
 					<ul class="sitetoolbar__sections-list">
-						<li class="sitetoolbar__section sitetoolbar__section_current"><a class="sitetoolbar__link"
+						<li class="sitetoolbar__section sitetoolbar__section_current"><a target="_blank" class="sitetoolbar__link"
 																																						 href="/">Учебник</a></li>
-						<li class="sitetoolbar__section"><a class="sitetoolbar__link" href="#">Курсы</a></li>
-						<li class="sitetoolbar__section"><a class="sitetoolbar__link" href="https://javascript.ru/forum/">Форум</a>
+						<li class="sitetoolbar__section"><a target="_blank" class="sitetoolbar__link" href="#">Курсы</a></li>
+						<li class="sitetoolbar__section"><a target="_blank" class="sitetoolbar__link" href="https://javascript.ru/forum/">Форум</a>
 						</li>
-						<li class="sitetoolbar__section"><a class="sitetoolbar__link" href="https://es5.javascript.ru">ES5</a></li>
-						<li class="sitetoolbar__section"><a class="sitetoolbar__link" href="#">Тесты знаний</a></li>
+						<li class="sitetoolbar__section"><a target="_blank" class="sitetoolbar__link" href="https://es5.javascript.ru">ES5</a></li>
+						<li class="sitetoolbar__section"><a target="_blank" class="sitetoolbar__link" href="#">Тесты знаний</a></li>
 						<li class="sitetoolbar__section sitetoolbar__section_dropdown">
 							<button class="sitetoolbar__dropdown-button headmenu__nolink" data-dropdown-toggler="">Скринкасты</button>
 						</li>
@@ -59,10 +59,9 @@
 			<span class="third"></span>
 		</label>
 		<ul class="hidden-menu">
-			<li class="hidden-menu_list">Разделы</li>
-			<li class="hidden-menu_list"><a href="">Введение</a></li>
-			<li class="hidden-menu_list">Навигация по уроку</li>
-			<li class="hidden-menu_list"><a class="firstcliker" href="#create_table">Create New Table</a></li>
+			<li class="hidden-menu_list">Sections</li>
+			<li class="hidden-menu_list"><a class= "secondcliker" href="#" >About JavaScript</a></li>
+			<li class="hidden-menu_list"><a class= "firstcliker" href="#create_table">Create New Table</a></li>
 			<li class="hidden-menu_list"><a href="#chto_mojet_javascript">Что может JavaScript в браузере? </a></li>
 			<li class="hidden-menu_list"><a href="#chto_nemojet_javascript">Что НЕ может JavaScript в браузере? </a>
 			</li>
@@ -73,21 +72,21 @@
 			<li class="hidden-menu_list">Поделиться</li>
 			<ul class="icons">
 				<li><a href="https://twitter.com/ismyloven" class="icons__link icons--twitter"
-							 aria-label="ссылка на твитер"></a></li>
+							 aria-label="ссылка на твитер" target="_blank"></a></li>
 				<li><a href="https://www.facebook.com/Ismylovens/" class="icons__link icons--facebook"
-							 aria-label="ссылка на фейсбук"></a></li>
-				<li><a href="https://vk.com/ismyloven" class="icons__link icons--vk" aria-label="ссылка на вконтакте"></a></li>
+							 aria-label="ссылка на фейсбук" target="_blank"></a></li>
+				<li><a href="https://vk.com/ismyloven" class="icons__link icons--vk" aria-label="ссылка на вконтакте" target="_blank"></a></li>
 			</ul>
 			<li class="hidden-menu_list"><a href="https://github.com/ismyloven">Редактировать на GitHub </a></li>
 		</ul>
 	</div>
 	<div class="table_class" style ="display:none;>
 		<a name="create_table">
-			<label>Введите количество строк:<input class="input_class" type="text" value="" id="rows"></label></br>
-			<label>Введите количество столбцов:<input class="input_class" type="text" value="" id="columns"></label></br>
+			<label>Enter the number of lines:<input class="input_class" type="text" value="" id="rows"></label></br>
+			<label>Enter the number of columns:<input class="input_class" type="text" value="" id="columns"></label></br>
 			<button id="create" onclick="addTable()">Create table</button>
 	</div>
-	<main class="container">
+	<main class="container" style ="display:none;">
 		<div class="main__text">
 			<h1 class="main__header">Введение в JavaScript</h1>
 			<div class="main__header--text">
@@ -338,25 +337,22 @@
 	<div class="page-footer">
 		<ul class="page-footer__list">
 			<li class="page-footer__item">©&nbsp;2007—2020&nbsp; Илья Кантор</li>
-			<li class="page-footer__item"><a class="page-footer__link" href="#">о проекте</a>
+			<li class="page-footer__item"><a  target="_blank" class="page-footer__link" href="#">о проекте</a>
 			</li>
-			<li class="page-footer__item"><a class="page-footer__link" href="#">связаться
+			<li class="page-footer__item"><a  target="_blank" class="page-footer__link" href="#">связаться
 				с нами</a></li>
-			<li class="page-footer__item"><a class="page-footer__link" href="#">пользовательское
+			<li class="page-footer__item"><a target="_blank"  class="page-footer__link" href="#">пользовательское
 				соглашение</a></li>
-			<li class="page-footer__item"><a class="page-footer__link" href="#">политика
-				конфиденциальности</a></li>
-			<li><a class="page-footer__link" href="#">slack-чат</a></li>
+			<li class="page-footer__item"><span class="usertime">timer</span></li>
 			<li class="lastdate"><div class="thedate">
-				<span></span>/
-				<span></span>/
-				<span></span>
+				<span></span>/<span></span>/<span></span>
 			</div></li>
 		</ul>
-
 	</div>
+
 </footer>
 <script src="HW_js/HW_17_table.js"></script>
 <script src="HW_js/HW_17_timer.js"></script>
+<script src="HW_js/HW_18_userTimer.js"></script>
 </body>
 </html>

@@ -612,7 +612,7 @@ a {
 
 .main__text {
   flex-wrap: wrap;
-  display: none; }
+  margin-top: -16px; }
 
 .main__header--caption {
   color: black; }
@@ -645,7 +645,7 @@ a {
   width: 100%; }
 
 .page-footer {
-  padding-left: 300px; }
+  padding-left: 250px; }
 
 .page-footer__link:hover {
   color: #b20600;
@@ -674,8 +674,17 @@ li {
   display: list-item;
   text-align: -webkit-match-parent; }
 
+.lastdate {
+  padding-left: 20px; }
+
+.thedate {
+  width: 80px;
+  height: 25px;
+  padding-left: 7px;
+  border: 1px solid red;
+  border-radius: 36px; }
+
 td {
-  padding: 10px;
   border: 2px solid #000;
   font-size: 0; }
 
@@ -684,9 +693,8 @@ td:hover {
   font-size: 15px; }
 
 .table_class {
-  display: flex;
-  padding-top: 50px;
-  justify-content: center; }
+  padding-top: 100px;
+  padding-left: 750px; }
 
 table {
   margin: auto; }
