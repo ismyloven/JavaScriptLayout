@@ -15,14 +15,14 @@ function userTimer() {
 	}
 
 
-	if (count > 60){
+	if (count > 60) {
 		minuteuser++;
 		if (minuteuser < 10) minuteuser = "0" + minuteuser;
-		return count =0;
+		return count = 0;
 
 	}
 
-	if (minuteuser > 60){
+	if (minuteuser > 60) {
 
 		hours++;
 		if (hoursuser < 10) {
@@ -30,7 +30,8 @@ function userTimer() {
 			return minuteuser = 0;
 		}
 
-	} secundomer.innerHTML=`${hoursuser}:${minuteuser}:${count}- времени на сайте`;
+	}
+	secundomer.innerHTML = `${hoursuser}:${minuteuser}:${count}- времени на сайте`;
 
 }
 
@@ -38,29 +39,36 @@ secundomer.addEventListener("mouseover", stop);
 secundomer.addEventListener("mouseout", start);
 
 
-function stop (){
+function stop() {
 	clearTimeout(counter);
 }
 
-function start (){
+function start() {
 	counter = setInterval(userTimer, 1000);
 }
 
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', escButton);
+
+function escButton(event) {
 	const key = event.key;
 	if (key === "Escape") {
-		console.log("salam");
-
+		// console.log("salam");
 		count = 0;
 
 	}
-});
+}
 
 
-secundomer.removeEventListener("mouseover",listener, stop);
-secundomer.removeEventListener("mouseout",listener, start);
+function removeAll() {
 
+	secundomer.removeEventListener("mouseover", listener, stop);
+	secundomer.removeEventListener("mouseout", listener, start);
+	document.removeEventListener('keydown', escButton);
+}
+
+
+removeAll();
 
 
 

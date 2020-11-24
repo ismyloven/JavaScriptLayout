@@ -40,6 +40,7 @@ let text = document.querySelector(".table_class");
 
 button.addEventListener("click", handler);
 
+
 function handler() {
 
 	if (text.style.display == "block") {
@@ -59,6 +60,7 @@ let text2 = document.querySelector(".container");
 
 button2.addEventListener("click", handler2);
 
+
 function handler2() {
 
 	if (text2.style.display == "block") {
@@ -67,7 +69,11 @@ function handler2() {
 	} else {
 		text2.style.display = "block";
 	}
+
 }
+
+
+
 
 
 
