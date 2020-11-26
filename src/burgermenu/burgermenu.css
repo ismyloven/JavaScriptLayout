@@ -70,7 +70,6 @@
   color: darkgrey;
 }
 
-/* sprite-icons in footer */
 
 
 .icons {
@@ -78,9 +77,10 @@
   padding-top: 20px;
   margin-left: -20px;
   list-style: none;
+}
 
-  &__link {
-    background-image: url("../image/burgermenu/img/sprite.png");
+.icons__link {
+    background-image: url("../burgermenu/img/sprite.png");
     background-repeat: no-repeat;
     height: 44px;
     padding-left: 20px;
@@ -89,30 +89,30 @@
 
   }
 
-  &--twitter {
+.icons--twitter {
     background-position: -8px 4px;
   }
 
-  &--twitter:hover {
+.icons--twitter:hover {
     background-position: -8px -32px;
   }
 
-  &--facebook {
+.icons--facebook {
     background-position: -40px 4px;
   }
 
-  &--facebook:hover {
+.icons--facebook:hover {
     background-position: -40px -33px;
   }
 
-  &--vk {
+.icons--vk {
     background-position: -84px 7px;
   }
 
-  &--vk:hover {
+.icons--vk:hover {
     background-position: -84px -30px;
   }
-}
+
 
 
 
