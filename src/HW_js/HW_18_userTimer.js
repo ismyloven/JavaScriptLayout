@@ -61,6 +61,18 @@ function escButton(event) {
 	}
 }
 
+let day = document.querySelector(".weekday");
+let date = new Date();
+let weekday = date.getDay();
+let options = { weekday: 'long'};
+if (weekday == 4) {
+	day.innerHTML = new Intl.DateTimeFormat('en-US', options).format(date);
+} else {
+	day.innerHTML = "oops";
+}
+
+
+
 
 function removeAll() {
 
