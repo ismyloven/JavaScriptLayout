@@ -55,6 +55,8 @@ function escButton(event) {
 	if (key === "Escape") {
 		// console.log("salam");
 		count = 0;
+		minuteuser = 0;
+		hoursuser = 0;
 
 	}
 }

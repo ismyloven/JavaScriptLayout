@@ -43,11 +43,6 @@ function handlerNext () {
 
 
 
-
-setInterval(handlerPrev,3000);
-
-
-
 let fourthcliker = document.querySelector(".fourthcliker");
 let hidenslidertext = document.querySelector(".hidenslidertext");
 
@@ -64,3 +59,4 @@ function getSliders() {
 	}
 }
 
+setInterval(handlerPrev,2000);
