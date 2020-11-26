@@ -65,6 +65,12 @@ function removeAll() {
 	secundomer.removeEventListener("mouseover", listener, stop);
 	secundomer.removeEventListener("mouseout", listener, start);
 	document.removeEventListener('keydown', escButton);
+	ton1.removeEventListener('click', handler);
+	ton2.removeEventListener('click', handler);
+	ton3.removeEventListener('click', handler);
+	mybutton.removeEventListener("click", getHandler);
+    button2.removeEventListener("click", handler2);
+	button.removeEventListener("click", handler);
 }
 
 

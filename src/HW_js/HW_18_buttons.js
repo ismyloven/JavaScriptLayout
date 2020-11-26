@@ -44,6 +44,8 @@ function getHandler() {
 // 	ton2.removeEventListener('click', handler);
 // 	ton3.removeEventListener('click', handler);
 // 	mybutton.removeEventListener("click", getHandler);
+//  button2.removeEventListener("click", handler2);
+// 	button.removeEventListener("click", handler);
 // }
 //
 //

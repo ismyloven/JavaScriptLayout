@@ -72,6 +72,13 @@ function handler2() {
 
 }
 
+// function clearAll(){
+// 	button2.removeEventListener("click", handler2);
+// 	button.removeEventListener("click", handler);
+//
+// }
+// clearAll();
+
 
 
 
