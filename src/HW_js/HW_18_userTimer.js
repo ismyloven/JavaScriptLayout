@@ -60,17 +60,22 @@ function escButton(event) {
 
 	}
 }
+var weekcount;
+let day = document.querySelector(".weekdaynumb");
 
-let day = document.querySelector(".weekday");
-let date = new Date();
-let weekday = date.getDay();
-let options = { weekday: 'long'};
-if (weekday) {
-	day.innerHTML = new Intl.DateTimeFormat('en-US', options).format(date);
-} else {
-	day.innerHTML = "oops";
-}
+var weekdate = new Date();
+	var weekday = new Array(7);
+	weekday[0] = "Sunday";
+	weekday[1] = "Monday";
+	weekday[2] = "Tuesday";
+	weekday[3] = "Wednesday";
+	weekday[4] = "Thursday";
+	weekday[5] = "Friday";
+	weekday[6] = "Saturday";
+	weekcount = weekday[weekdate.getDay()];
 
+
+day.innerHTML = weekcount;
 
 
 
@@ -86,9 +91,11 @@ function removeAll() {
     button2.removeEventListener("click", handler2);
 	button.removeEventListener("click", handler);
 	fourthcliker.removeEventListener("click", handlerSlider);
-	prev.removeEventListener("click", minusSlide);
-	next.removeEventListener("click", plusSlide);
-	dots_item.removeEventListener("click", currentSlide);
+	prev.addEventListener("click", minusSlide);
+	next.addEventListener("click", plusSlide);
+	dots_item.addEventListener("click", currentSlide);
+	startStop.addEventListener("mouseover", stopWorking);
+	startStop.addEventListener("mouseout", startWorking);
 }
 
 
