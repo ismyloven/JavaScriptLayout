@@ -1,9 +1,8 @@
-
-let hours = document.querySelector('.hours') ;
-let minutes = document.querySelector('.minutes') ;
-let seconds = document.querySelector('.seconds') ;
-let timer = document.querySelector('.thedate') ;
-
+let hours = document.querySelector('.hours');
+let minutes = document.querySelector('.minutes');
+let seconds = document.querySelector('.seconds');
+let timer = document.querySelector('.thedate');
+let timerScreen = document.querySelector('.timer');
 
 
 function sayTime() {
@@ -12,8 +11,8 @@ function sayTime() {
 	let hoursScreen = date.getHours();
 
 	if (hoursScreen < 10) {
-		hoursScreen = '0'+ date.getHours();
-	}  else {
+		hoursScreen = '0' + date.getHours();
+	} else {
 		hoursScreen = date.getHours();
 	}
 
@@ -21,44 +20,43 @@ function sayTime() {
 	let minutesScreen = date.getMinutes();
 
 	if (minutesScreen < 10) {
-		minutesScreen = '0'+ date.getMinutes();
-	}  else {
+		minutesScreen = '0' + date.getMinutes();
+	} else {
 		minutesScreen = date.getMinutes();
 	}
 
 	let secondsScreen = date.getSeconds();
 
 	if (secondsScreen < 10) {
-		secondsScreen = '0'+ date.getSeconds();
-	}  else {
+		secondsScreen = '0' + date.getSeconds();
+	} else {
 		secondsScreen = date.getSeconds();
 	}
 
 
-	if(start) {
+	if (start) {
 		hours.innerHTML = hoursScreen;
 		minutes.innerHTML = minutesScreen;
 		seconds.innerHTML = secondsScreen;
 		start = false;
 	}
 
-	if(secondsScreen === 59) {
-		minutes.innerHTML = minutesScreen;
-		seconds.innerHTML = secondsScreen;
-	}
 
-	if(minutesScreen === 59) {
+	if (secondsScreen === 60) {
 		hours.innerHTML = hoursScreen;
 		minutes.innerHTML = minutesScreen;
 		seconds.innerHTML = secondsScreen;
 	}
 
-	seconds.innerHTML = secondsScreen;
-
-
+	if (minutesScreen === 60) {
+		hours.innerHTML = hoursScreen;
+		minutes.innerHTML = minutesScreen;
+		seconds.innerHTML = secondsScreen;
+	}
+	timerScreen.innerHTML = `${hoursScreen}:${minutesScreen}:${secondsScreen}`;
 }
-setInterval(sayTime, start = true, 1000);
 
+setInterval(sayTime, start = true, 1000);
 
 
 let thedate = new Date();
