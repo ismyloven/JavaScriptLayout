@@ -11,10 +11,7 @@ function userTimer() {
 	count++;
 	if (count < 10) {
 		count = "0" + count;
-
 	}
-
-
 	if (count > 60) {
 		minuteuser++;
 		if (minuteuser < 10) minuteuser = "0" + minuteuser;
@@ -91,11 +88,9 @@ function removeAll() {
     button2.removeEventListener("click", handler2);
 	button.removeEventListener("click", handler);
 	fourthcliker.removeEventListener("click", handlerSlider);
-	prev.addEventListener("click", minusSlide);
-	next.addEventListener("click", plusSlide);
-	dots_item.addEventListener("click", currentSlide);
-	startStop.addEventListener("mouseover", stopWorking);
-	startStop.addEventListener("mouseout", startWorking);
+	slider.removeEventListener("mouseover", stopWorkSlide);
+	slider.removeEventListener("mouseout", startWorkslide);
+
 }
 
 

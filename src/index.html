@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="./maintext/maintext.css">
 	<link rel="stylesheet" href="./slidershow/slide.css">
 	<link rel="stylesheet" href="./HW19/HW_19%20style.css">
+	<link rel="stylesheet" href="./studentForm/studentform.css">
 </head>
 <body>
 <header>
@@ -37,9 +38,11 @@
 						<li class="sitetoolbar__section sitetoolbar__section_current"><a target="_blank" class="sitetoolbar__link"
 																																						 href="/">Учебник</a></li>
 						<li class="sitetoolbar__section"><a target="_blank" class="sitetoolbar__link" href="#">Курсы</a></li>
-						<li class="sitetoolbar__section"><a target="_blank" class="sitetoolbar__link" href="https://javascript.ru/forum/">Форум</a>
+						<li class="sitetoolbar__section"><a target="_blank" class="sitetoolbar__link"
+																								href="https://javascript.ru/forum/">Форум</a>
 						</li>
-						<li class="sitetoolbar__section"><a target="_blank" class="sitetoolbar__link" href="https://es5.javascript.ru">ES5</a></li>
+						<li class="sitetoolbar__section"><a target="_blank" class="sitetoolbar__link"
+																								href="https://es5.javascript.ru">ES5</a></li>
 						<li class="sitetoolbar__section"><a target="_blank" class="sitetoolbar__link" href="#">Тесты знаний</a></li>
 						<li class="sitetoolbar__section sitetoolbar__section_dropdown">
 							<button class="sitetoolbar__dropdown-button headmenu__nolink" data-dropdown-toggler="">Скринкасты</button>
@@ -64,12 +67,12 @@
 		</label>
 		<ul class="hidden-menu">
 			<li class="hidden-menu_list">Sections</li>
-			<li class="hidden-menu_list"><a class= "secondcliker" href="#" >About JavaScript</a></li>
-			<li class="hidden-menu_list"><a class= "firstcliker" href="#">Create New Table</a></li>
-			<li class="hidden-menu_list"><a class= "thirdcliker" href="#">Rainbow buttons </a></li>
-			<li class="hidden-menu_list"><a class= "fourthcliker" href="#">CatSlider</a></li>
-			<li class="hidden-menu_list"><a class= "fivecliker" href="#">HW:19 slider </a></li>
-			<li class="hidden-menu_list"><a href="#">Языки «над» JavaScript </a></li>
+			<li class="hidden-menu_list"><a class="secondcliker" href="#">About JavaScript</a></li>
+			<li class="hidden-menu_list"><a class="firstcliker" href="#">Create New Table</a></li>
+			<li class="hidden-menu_list"><a class="thirdcliker" href="#">Rainbow buttons </a></li>
+			<li class="hidden-menu_list"><a class="fourthcliker" href="#">CatSlider</a></li>
+			<li class="hidden-menu_list"><a class="fivecliker" href="#">HW:19 slider </a></li>
+			<li class="hidden-menu_list"><a class="sixcliker" href="#">Student Form </a></li>
 			<li class="hidden-menu_list"><a href="#">Итого </a></li>
 			<li class="hidden-menu_list"><a href="#">Комментарии </a></li>
 			<li class="hidden-menu_list">Поделиться</li>
@@ -78,61 +81,105 @@
 							 aria-label="ссылка на твитер" target="_blank"></a></li>
 				<li><a href="https://www.facebook.com/Ismylovens/" class="icons__link icons--facebook"
 							 aria-label="ссылка на фейсбук" target="_blank"></a></li>
-				<li><a href="https://vk.com/ismyloven" class="icons__link icons--vk" aria-label="ссылка на вконтакте" target="_blank"></a></li>
+				<li><a href="https://vk.com/ismyloven" class="icons__link icons--vk" aria-label="ссылка на вконтакте"
+							 target="_blank"></a></li>
 			</ul>
-			<li class="hidden-menu_list"><a href="https://github.com/ismyloven" target="_blank">Редактировать на GitHub </a></li>
+			<li class="hidden-menu_list"><a href="https://github.com/ismyloven" target="_blank">Редактировать на GitHub </a>
+			</li>
 		</ul>
 	</div>
-	<div class="table_class" style ="display:none;>
-		<a name="">
-			<label>Enter the number of lines:<input class="input_class" type="text" value="" id="rows"></label></br>
-			<label>Enter the number of columns:<input class="input_class" type="text" value="" id="columns"></label></br>
-			<button id="create" onclick="addTable()">Create table</button>
+	<div class="table_class" style="display:none;>
+		<a name="
+	"><label>Enter the number of lines:<input class="input_class" type="text" value="" id="rows"></label></br><label>Enter
+	the number of columns:<input class="input_class" type="text" value="" id="columns"></label></br>
+	<button id="create" onclick="addTable()">Create table</button>
 	</div>
-	<div class="rainbow_buttons" style ="display:none;">
-		<input id = "ton1" value="my button" type="button" class="rainbow"/>
-		<input id = "ton2" value="my button" type="button" class="rainbow"/>
-		<input id = "ton3" value="my button" type="button" class="rainbow" />
-	</div>
-
-	<div class="slider hidenslidertext" style ="display:none;">
-		<div class="item">
-			<img src="./slidershow/image/cat1.png" alt="Первый слайд">
-			<span class="slideText">The little cat wants to drink</span>
-		</div>
-		<div class="item">
-			<img src="./slidershow/image/cat2.png"  alt="Второй слайд">
-			<span class="slideText">The little cat see the coffee</span>
-		</div>
-		<div class="item">
-			<img src="./slidershow/image/cat3.png"  alt="Третий слайд">
-			<span class="slideText">The little cat just wants to taste it</span>
-		</div>
-		<div class="item">
-			<img src="./slidershow/image/cat4.png"  alt="Четвертый слайд">
-			<span class="slideText">The little cat accidentally dropped cup<br>...and run</span>
-		</div>
-		<a href="#" class="prev">&#10094;</a>
-		<a  href="#" class="next">&#10095;</a>
-		<div class="slider-dots">
-			<span class="slider-dots_item" ></span>
-			<span class="slider-dots_item" ></span>
-			<span class="slider-dots_item" ></span>
-			<span class="slider-dots_item" ></span>
-		</div>
+	<div class="rainbow_buttons" style="display:none;">
+		<input id="ton1" value="my button" type="button" class="rainbow"/>
+		<input id="ton2" value="my button" type="button" class="rainbow"/>
+		<input id="ton3" value="my button" type="button" class="rainbow"/>
 	</div>
 
-	<div class="videoslider" style ="display:block;">
-<div class="sliderhome">
-	<div class="line">
-		<img class="slide" src="HW19/image/cat1.png" alt ="cats">
-		<img class="slide" src="HW19/image/cat2.png" alt ="cats">
-		<img class="slide" src="HW19/image/cat3.png" alt ="cats">
-		<img class="slide" src="HW19/image/cat4.png" alt ="cats">
-</div>
+	<div class="slider hidenslidertext" style="display:block;">
+		<div id="viewport">
+			<div class="newslider" style="left: 0;">
+				<div class="newslide"><img src="./slidershow/image/cat1.png" alt="первый слайд"
+																	 title="The little cat wants to drink"></div>
+				<div class="newslide"><img src="./slidershow/image/cat2.png" alt="Второй слайд"
+																	 title="The little cat see the coffee"></div>
+				<div class="newslide"><img src="./slidershow/image/cat3.png" alt="Третий слайд"
+																	 title="The little cat just wants to taste it"></div>
+				<div class="newslide"><img src="./slidershow/image/cat4.png" alt="Четвертый слайд"
+																	 title="The little cat accidentally dropped cup..and run"></div>
+
+			</div>
+		</div>
+
+		<div id="viewSlider">
+			<div class="viewSlide">1</div>
+			<div class="viewSlide">2</div>
+			<div class="viewSlide">3</div>
+			<div class="viewSlide">4</div>
+		</div>
+		<button class="prev" id="prev">&lArr;</button>
+		<button class="next" id="next">&rArr;</button>
 	</div>
+
+	<div class="videoslider sliderhome" style="display:block;">
+		<div class="line">
+			<img class="slide" src="HW19/image/cat1.png" alt="cats">
+			<img class="slide" src="HW19/image/cat2.png" alt="cats">
+			<img class="slide" src="HW19/image/cat3.png" alt="cats">
+			<img class="slide" src="HW19/image/cat4.png" alt="cats">
+		</div>
 	</div>
-		<main class="container" style ="display:none;">
+
+	<div class="mainform" style="display: none;">
+		<h1>A form to fill in</h1>
+		<form>
+			<fieldset class="form_student">
+				<legend class="form_head">Main information</legend>
+				<div class="form_value">
+					<label>
+						Name*
+						<input class="firstname" type="text" name="user_first_name" placeholder="Enter your name" required/>
+					</label>
+				</div>
+				<div class="form_value">
+					<label>Surname*
+						<input class="lastname" type="text" name="user_ last_name" placeholder="Enter your last name" required/>
+					</label>
+				</div>
+				<div class="form_value">
+					<label>Year of entrance*
+						<input class="enterdate" type="date" name="enterdate" placeholder="Enter the year of entrance" required/>
+					</label>
+				</div>
+				<div class="form_value">
+					<label>Year of ending*
+						<input class="exitdate" type="date" name="exitdate" placeholder="Year of ending" required/>
+					</label>
+				</div>
+				<div class="form_value">
+					<label>Enter your age *
+						<input class="age" type="number" name="date" required/>
+					</label>
+				</div>
+				<div class="form_value">
+					<label>Enter your course*
+						<input class="coursename" type="text" name="coursename" placeholder="Enter your course" required/>
+					</label>
+				</div>
+				<div class="form_button">
+					<button type="button" class="form_buttons"> Edit</button>
+					<button type="button" class="form_buttons"> Delete</button>
+					<button type="button" class="form_buttons"> Save</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<main class="container" style="display:none;">
 		<div class="main__text">
 			<h1 class="main__header">Введение в JavaScript</h1>
 			<div class="main__header--text">
@@ -384,23 +431,26 @@
 	<div class="page-footer">
 		<ul class="page-footer__list">
 			<li class="page-footer__item">©&nbsp;2007—2020&nbsp; Илья Кантор</li>
-			<li class="page-footer__item"><a  target="_blank" class="page-footer__link" href="#">о проекте</a>
+			<li class="page-footer__item"><a target="_blank" class="page-footer__link" href="#">о проекте</a>
 			</li>
-			<li class="page-footer__item"><a  target="_blank" class="page-footer__link" href="#">связаться
+			<li class="page-footer__item"><a target="_blank" class="page-footer__link" href="#">связаться
 				с нами</a></li>
 			<li class="page-footer__item"><span class="usertime">timer</span></li>
 			<li><span class="weekdaynumb">День недели</span></li>
-			<li class="lastdate"><div class="thedate">
-				<span></span>/<span></span>/<span></span>
-			</div></li>
+			<li class="lastdate">
+				<div class="thedate">
+					<span></span>/<span></span>/<span></span>
+				</div>
+			</li>
 		</ul>
 	</div>
 </footer>
 <script src="HW_js/HW_17_table.js"></script>
 <script src="HW_js/HW_17_timer.js"></script>
 <script src="HW_js/HW_18_userTimer.js"></script>
-<script src ="HW_js/HW_18_buttons.js"></script>
-<script src ="slidershow/sliderjs.js"></script>
+<script src="HW_js/HW_18_buttons.js"></script>
+<script src="slidershow/sliderjs.js"></script>
 <script src="HW19/HW_19JS.js"></script>
+<script src="studentForm/studenform.js"></script>
 </body>
 </html>

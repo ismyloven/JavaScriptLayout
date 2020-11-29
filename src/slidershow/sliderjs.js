@@ -1,68 +1,53 @@
-let prev = document.querySelector(".prev");
-let next = document.querySelector(".next");
-let dots_item = document.querySelector(".slider-dots_item");
-let startStop = document.querySelector(".item");
+let viewport = document.getElementById("viewport").offsetWidth;
+let btnNext = document.getElementById("next");
+let btnPrev = document.getElementById("prev");
+let slider = document.querySelector(".newslider");
+let viewSliders = document.querySelectorAll(".viewSlide");
+let viewSlide = 0;
 
-prev.addEventListener("click", minusSlide);
-next.addEventListener("click", plusSlide);
-dots_item.addEventListener("click", currentSlide);
-startStop.addEventListener("mouseover", stopWorking);
-startStop.addEventListener("mouseout", startWorking);
+viewSliders[0].style.backgroundColor = "pink";
 
+let startSlide = setInterval(nextSlid, 2000);
 
-// let slideText = document.querySelector(".slideText");
-// slideText.addEventListener("mouseover", textHandler);
-// function textHandler(event){
-// 	slideText.classList.toggle("mouseText");
-// }
+btnNext.addEventListener("click", nextSlid);
 
+	function nextSlid () {
 
-let slideIndex = 1;
-let startSlide = setInterval(plusSlide, 2000);
-
-function currentSlide(n) {
-	showSlides(slideIndex = n);
+	viewSliders[viewSlide].style.backgroundColor = "yellow";
+	if (viewSlide < 3) {
+		viewSlide++;
+	} else {
+		viewSlide = 0;
+	}
+	viewSliders[viewSlide].style.backgroundColor = "pink";
+	slider.style.left = -viewSlide * viewport + "px";
 }
 
-function plusSlide() {
-	showSlides(slideIndex += 1);
-
+btnPrev.addEventListener("click", prevSlid);
+	function prevSlid () {
+	viewSliders[viewSlide].style.backgroundColor = "yellow";
+	if (viewSlide > 0) {
+		viewSlide--;
+	} else {
+		viewSlide = 3;
+	}
+	viewSliders[viewSlide].style.backgroundColor = "pink";
+	slider.style.left = -viewSlide * viewport + "px";
 }
 
-function minusSlide() {
-	showSlides(slideIndex -= 1);
-}
 
-function showSlides(n) {
-	let slides = document.getElementsByClassName("item");
-	let dots = document.getElementsByClassName("slider-dots_item");
-	if (n > slides.length) {
-		slideIndex = 1
-	}
-	if (n < 1) {
-		slideIndex = slides.length
-	}
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-	}
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
+slider.addEventListener("mouseover", stopWorkSlide);
+slider.addEventListener("mouseout", startWorkslide);
 
-	}
-	slides[slideIndex - 1].style.display = "block";
-	dots[slideIndex - 1].className += " active";
-}
-
-showSlides(slideIndex);
-
-
-function stopWorking() {
+function stopWorkSlide() {
 	startSlide = clearInterval(startSlide);
 }
 
-function startWorking() {
-	startSlide = setInterval(plusSlide, 2000);
+function startWorkslide() {
+	startSlide = setInterval(nextSlid, 2000);
 }
+
+
 
 
 let fourthcliker = document.querySelector(".fourthcliker");
@@ -76,8 +61,9 @@ function handlerSlider() {
 	if (hidenslidertext.style.display == "block") {
 		hidenslidertext.style.display = "none";
 
+
 	} else {
 		hidenslidertext.style.display = "block";
+		startSlide = setInterval(nextSlid, 2000);
 	}
 }
-

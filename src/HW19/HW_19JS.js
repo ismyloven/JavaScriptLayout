@@ -32,7 +32,7 @@ function newslider() {
    	step++;
    }
 }
-setInterval(newslider,3000);
+setInterval(newslider,2000);
 
 
 

@@ -5,16 +5,18 @@
     margin-left: 450px;
     overflow: hidden;
 }
-.line{
+.line {
 	position: relative;
 	height: 450px;
 	overflow: hidden;
 	left: 0;
 	transition: all ease 1s;
 }
-.slide{
+.slide {
 	height: 450px;
 	float: left;
 	width: 600px;
+	overflow: visible;
 }
+
 

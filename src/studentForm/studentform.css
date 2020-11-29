@@ -1,0 +1,23 @@
+
+.mainform {
+	padding-top: 50px;
+}
+
+.form_student{
+	background-color: #e7ffa2;
+	border: 1px solid red;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form_value{
+	padding: 5px;
+
+}
+.form_button{
+	display: flex;
+	align-items: center;
+}
+.form_buttons{
+	margin-right: 10px;
+}
