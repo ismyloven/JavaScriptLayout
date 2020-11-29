@@ -1,9 +1,9 @@
 
-
-#viewport {
+.viewport {
   width: 50vw;
   height: 450px;
   overflow: hidden;
+
 }
 
 .newslider {
@@ -28,10 +28,11 @@
   object-position: 0;
 }
 
-#viewSlider {
+.viewSlider {
   width: calc(30px * 4);
   display: flex;
   justify-content: space-between;
+
 }
 
 .viewSlide {

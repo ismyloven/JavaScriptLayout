@@ -1,6 +1,6 @@
-let viewport = document.getElementById("viewport").offsetWidth;
-let btnNext = document.getElementById("next");
-let btnPrev = document.getElementById("prev");
+let viewport = document.querySelector(".viewport").offsetWidth;
+let btnNext = document.querySelector(".next");
+let btnPrev = document.querySelector(".prev");
 let slider = document.querySelector(".newslider");
 let viewSliders = document.querySelectorAll(".viewSlide");
 let viewSlide = 0;
@@ -55,6 +55,8 @@ let hidenslidertext = document.querySelector(".hidenslidertext");
 
 
 fourthcliker.addEventListener("click", handlerSlider);
+
+
 
 function handlerSlider() {
 
