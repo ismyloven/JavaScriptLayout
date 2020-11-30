@@ -137,46 +137,62 @@
 	<div class="mainform" style="display: none;">
 		<h1>A form to fill in</h1>
 		<form>
-			<fieldset class="form_student">
+		<fieldset class="form_student">
+
 				<legend class="form_head">Main information</legend>
 				<div class="form_value">
 					<label>
 						Name*
-						<input class="firstname" type="text" name="user_first_name" placeholder="Enter your name" required/>
+						<input class="firstname" type="text" maxlength="10" name="firstname" placeholder="Enter your name" required/>
 					</label>
 				</div>
 				<div class="form_value">
 					<label>Surname*
-						<input class="lastname" type="text" name="user_ last_name" placeholder="Enter your last name" required/>
+						<input class="lastname" type="text" maxlength="10" name="lastname" placeholder="Enter your last name" required/>
 					</label>
 				</div>
 				<div class="form_value">
 					<label>Year of entrance*
-						<input class="enterdate" type="date" name="enterdate" placeholder="Enter the year of entrance" required/>
+						<input class="enterdate" type="text" name="enterdate" placeholder="Enter the year of entrance" required/>
 					</label>
 				</div>
 				<div class="form_value">
 					<label>Year of ending*
-						<input class="exitdate" type="date" name="exitdate" placeholder="Year of ending" required/>
+						<input class="exitdate" type="text" name="exitdate" placeholder="Year of ending" required/>
 					</label>
 				</div>
 				<div class="form_value">
-					<label>Enter your age *
-						<input class="age" type="number" name="date" required/>
+					<label>Enter your age*
+						<input class="age" type="number" name="age" maxlength="2" />
 					</label>
 				</div>
 				<div class="form_value">
 					<label>Enter your course*
-						<input class="coursename" type="text" name="coursename" placeholder="Enter your course" required/>
+						<input class="coursename" type="text" maxlength="10" name="coursename" placeholder="Enter your course" required/>
 					</label>
 				</div>
 				<div class="form_button">
-					<button type="button" class="form_buttons"> Edit</button>
-					<button type="button" class="form_buttons"> Delete</button>
-					<button type="button" class="form_buttons"> Save</button>
+					<button type="button" class="edit_button"> Edit</button>
+					<button type="button" class="delete_button"> Delete</button>
+					<button type="button" class="save_button"> Save</button>
 				</div>
-			</fieldset>
+		</fieldset>
 		</form>
+		<div class="student_table">
+			<table class="student_table__form">
+				<tr>
+					<th>Choose</th>
+					<th>Name</th>
+					<th>Surname</th>
+					<th>Age</th>
+					<th>Course</th>
+					<th>Year of entrance</th>
+					<th>Year of ending</th>
+					<th>Actions</th>
+				</tr>
+			</table>
+		</div>
+
 	</div>
 
 	<main class="container" style="display:none;">

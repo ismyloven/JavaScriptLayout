@@ -12,12 +12,31 @@
 
 .form_value{
 	padding: 5px;
-
 }
 .form_button{
 	display: flex;
 	align-items: center;
+
 }
-.form_buttons{
+.edit_button,.delete_button,.save_button {
 	margin-right: 10px;
+}
+
+
+.student_table, th{
+	border: 1px solid;
+	padding-left:20px;
+	padding-right:30px;
+}
+
+.student_table__form{
+	margin-top: 20px;
+}
+
+.students-show label{
+	margin-right: 10px;
+}
+
+.action_icons{
+	padding-right: 5px;
 }
