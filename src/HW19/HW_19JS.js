@@ -36,22 +36,6 @@ setInterval(newslider,2000);
 
 
 
-let fiveclik = document.querySelector(".fivecliker");
-let videoslid = document.querySelector(".videoslider");
-
-
-fiveclik.addEventListener('click', handler19);
-
-function handler19 (){
-	if(videoslid.style.display == "block"){
-		videoslid.style.display = "none";
-
-	} else {
-		videoslid.style.display = "block";
-	}
-}
-
-
 
 
 

@@ -22,34 +22,9 @@ ton2.addEventListener('click', handler);
 ton3.addEventListener('click', handler);
 
 
-let mybutton = document.querySelector(".thirdcliker");
-let hidentext = document.querySelector(".rainbow_buttons");
 
 
-mybutton.addEventListener("click", getHandler);
 
-function getHandler() {
-
-	if (hidentext.style.display == "block") {
-		hidentext.style.display = "none";
-
-	} else {
-		hidentext.style.display = "block";
-	}
-}
-
-
-// function   finishAll(){
-// 	ton1.removeEventListener('click', handler);
-// 	ton2.removeEventListener('click', handler);
-// 	ton3.removeEventListener('click', handler);
-// 	mybutton.removeEventListener("click", getHandler);
-//  button2.removeEventListener("click", handler2);
-// 	button.removeEventListener("click", handler);
-// }
-//
-//
-// finishAll();
 
 
 

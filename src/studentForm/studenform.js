@@ -48,7 +48,7 @@ function saveResult() {
 	endDayColumn.innerHTML = studentExitDate.value;
 
 	newRow.appendChild(iconsColumn);
-	iconsColumn.innerHTML= ` <img class="action_icons" src="./icons/delete.png"><img class="action_icons" src="./icons/disk.png"><img class="action_icons" src="./icons/pencil.png">`;
+	iconsColumn.innerHTML= `<img class="action_icons edititem" src="./studentForm/icons/pencil.png"> <img class="action_icons saveitem" src="./studentForm/icons/disk.png"> <img class="action_icons deleteitem" src="./studentForm/icons/delete.png">`;
 }
 
 
@@ -81,36 +81,3 @@ saveButton.addEventListener("click", saveResult);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let formbut  = document.querySelector(".sixcliker");
-let formstudents  = document.querySelector(".mainform");
-
-formbut.addEventListener("click", formHandler);
-
-function formHandler(){
-	 if(formstudents.style.display =="block"){
-		 formstudents.style.display ="none";
-	 } else{
-		 formstudents.style.display ="block";
-	 }
-}

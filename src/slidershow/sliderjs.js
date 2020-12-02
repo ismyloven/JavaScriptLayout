@@ -15,6 +15,7 @@ btnNext.addEventListener("click", nextSlid);
 
 	viewSliders[viewSlide].style.backgroundColor = "yellow";
 	if (viewSlide < 3) {
+
 		viewSlide++;
 	} else {
 		viewSlide = 0;
@@ -24,6 +25,7 @@ btnNext.addEventListener("click", nextSlid);
 }
 
 btnPrev.addEventListener("click", prevSlid);
+
 	function prevSlid () {
 	viewSliders[viewSlide].style.backgroundColor = "yellow";
 	if (viewSlide > 0) {
@@ -47,25 +49,3 @@ function startWorkslide() {
 	startSlide = setInterval(nextSlid, 2000);
 }
 
-
-
-
-let fourthcliker = document.querySelector(".fourthcliker");
-let hidenslidertext = document.querySelector(".hidenslidertext");
-
-
-fourthcliker.addEventListener("click", handlerSlider);
-
-
-
-function handlerSlider() {
-
-	if (hidenslidertext.style.display == "block") {
-		hidenslidertext.style.display = "none";
-
-
-	} else {
-		hidenslidertext.style.display = "block";
-		startSlide = setInterval(nextSlid, 2000);
-	}
-}

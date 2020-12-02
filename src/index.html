@@ -65,7 +65,7 @@
 			<span class="second"></span>
 			<span class="third"></span>
 		</label>
-		<ul class="hidden-menu">
+		<ul class="hidden-menu sitebar_list">
 			<li class="hidden-menu_list">Sections</li>
 			<li class="hidden-menu_list"><a class="secondcliker" href="#">About JavaScript</a></li>
 			<li class="hidden-menu_list"><a class="firstcliker" href="#">Create New Table</a></li>
@@ -88,19 +88,22 @@
 			</li>
 		</ul>
 	</div>
-	<div class="table_class" style="display:none;>
-		<a name="
-	"><label>Enter the number of lines:<input class="input_class" type="text" value="" id="rows"></label></br><label>Enter
-	the number of columns:<input class="input_class" type="text" value="" id="columns"></label></br>
-	<button id="create" onclick="addTable()">Create table</button>
+	<div class="main_container">
+
+	<div class="table_class template"  style="display:none;">
+		<label>Enter the number of lines: <input class="input_class" type="text" id="rows">
+		</label></br><label>Enter the number of columns:<input class="input_class" type="text" value="" id="columns"></label></br>
+	<button onclick="addTable()">Create table</button>
 	</div>
-	<div class="rainbow_buttons" style="display:none;">
+
+
+	<div class="rainbow_buttons template" style="display:none;">
 		<input id="ton1" value="my button" type="button" class="rainbow"/>
 		<input id="ton2" value="my button" type="button" class="rainbow"/>
 		<input id="ton3" value="my button" type="button" class="rainbow"/>
 	</div>
 
-	<div class="hidenslidertext" style="display: block;">
+	<div class="hidenslidertext template" style="display: none;">
 		<div class="viewport">
 			<div class="newslider" style="left: 0;">
 				<div class="newslide"><img src="./slidershow/image/cat1.png" alt="первый слайд"
@@ -125,7 +128,7 @@
 		<button class="next" >&rArr;</button>
 	</div>
 
-	<div class="videoslider sliderhome" style="display:block;">
+	<div class="videoslider sliderhome template" style="display:none;">
 		<div class="line">
 			<img class="slide" src="HW19/image/cat1.png" alt="cats">
 			<img class="slide" src="HW19/image/cat2.png" alt="cats">
@@ -134,7 +137,7 @@
 		</div>
 	</div>
 
-	<div class="mainform" style="display: none;">
+	<div class="mainform template" style="display: none;">
 		<h1>A form to fill in</h1>
 		<form>
 		<fieldset class="form_student">
@@ -195,7 +198,7 @@
 
 	</div>
 
-	<main class="container" style="display:none;">
+	<main class="container template" style="display:none;">
 		<div class="main__text">
 			<h1 class="main__header">Введение в JavaScript</h1>
 			<div class="main__header--text">
@@ -442,7 +445,7 @@
 		</div>
 	</main>
 </section>
-
+</div>
 <footer class="footer">
 	<div class="page-footer">
 		<ul class="page-footer__list">
@@ -460,7 +463,10 @@
 			</li>
 		</ul>
 	</div>
+
+
 </footer>
+<script src ="main.js"></script>
 <script src="HW_js/HW_17_table.js"></script>
 <script src="HW_js/HW_17_timer.js"></script>
 <script src="HW_js/HW_18_userTimer.js"></script>
