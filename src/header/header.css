@@ -1,3 +1,6 @@
+
+
+
 body {
   font: 14px/20px BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   color: #333;
@@ -238,10 +241,12 @@ a {
   .sitetoolbar__sections-list, .button_currency{
     display: none;
   }
-  .btn-menu{
+  .btn-menu {
     margin-top: -60px;
-
+    margin-left: -100px;
   }
+
+
   .btn-menu span{
     left: -60px;
     top: -5px;
@@ -249,11 +254,33 @@ a {
   .sitetoolbar__logo_normal{
     margin-left: 100px;
   }
-  .hidden-menu{
-    visibility: hidden;
-  }
 
+
+  .hidden-menu{
+    height: 300px;
+    padding-top: 2px;
+    background-color: lightpink;
+    border: 1px solid red;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+.icons{
+  visibility: hidden;
+  position: absolute;
+}
   .main__header--text{
     margin-left: -100px;
   }
+  .hidden-menu_list{
+    line-height: 23px;
+
+  }
+
+  .hidden-menu-ticker:checked ~ .hidden-menu {
+    transition: top .2s;
+  }
+
 }
+
+

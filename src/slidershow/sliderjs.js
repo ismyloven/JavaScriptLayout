@@ -1,51 +1,20 @@
-let viewport = document.querySelector(".viewport").offsetWidth;
-let btnNext = document.querySelector(".next");
-let btnPrev = document.querySelector(".prev");
-let slider = document.querySelector(".newslider");
-let viewSliders = document.querySelectorAll(".viewSlide");
-let viewSlide = 0;
 
-viewSliders[0].style.backgroundColor = "pink";
+const slider = document.querySelector(".newslider");
+let score = 0;
 
-let startSlide = setInterval(nextSlid, 2000);
 
-btnNext.addEventListener("click", nextSlid);
+const startSlide = setInterval(nextSlide, 2000);
 
-	function nextSlid () {
+function nextSlide() {
 
-	viewSliders[viewSlide].style.backgroundColor = "yellow";
-	if (viewSlide < 3) {
-
-		viewSlide++;
+	if (score < 3) {
+		score++;
 	} else {
-		viewSlide = 0;
+		score = 0;
 	}
-	viewSliders[viewSlide].style.backgroundColor = "pink";
-	slider.style.left = -viewSlide * viewport + "px";
+
+	slider.style.left = `${-score * 450 + "px"}`;
 }
 
-btnPrev.addEventListener("click", prevSlid);
-
-	function prevSlid () {
-	viewSliders[viewSlide].style.backgroundColor = "yellow";
-	if (viewSlide > 0) {
-		viewSlide--;
-	} else {
-		viewSlide = 3;
-	}
-	viewSliders[viewSlide].style.backgroundColor = "pink";
-	slider.style.left = -viewSlide * viewport + "px";
-}
-
-
-slider.addEventListener("mouseover", stopWorkSlide);
-slider.addEventListener("mouseout", startWorkslide);
-
-function stopWorkSlide() {
-	startSlide = clearInterval(startSlide);
-}
-
-function startWorkslide() {
-	startSlide = setInterval(nextSlid, 2000);
-}
+startSlide();
 

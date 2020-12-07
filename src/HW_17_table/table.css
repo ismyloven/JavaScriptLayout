@@ -1,3 +1,11 @@
+
+
+.table_class{
+  display: none;
+}
+
+
+
 td {
   border: 2px solid #000;
   font-size: 14px;
@@ -8,10 +16,9 @@ td:hover {
 
 .table_class{
   padding-top: 100px;
-  padding-left: 750px;
+  padding-left: 450px;
 
 }
-
  table {
     margin: auto;
  }
@@ -29,7 +36,7 @@ td:hover {
 }
 
 
-.rainbow_buttons{
+.rainbows_buttons{
   padding-top: 90px;
   text-align: center;
 }
@@ -38,4 +45,8 @@ td:hover {
   height: 40px;
   width: 120px;
   margin-left: 20px;
+}
+
+.rainbow_buttons{
+  display: none;
 }

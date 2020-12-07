@@ -1,7 +1,6 @@
 
-.viewport {
-  width: 50vw;
-  height: 450px;
+.visibleArea {
+  width: 450px;
   overflow: hidden;
 }
 
@@ -9,7 +8,6 @@
   position: relative;
   transition: all ease 1s;
   width: calc(100% * 4);
-  height: 450px;
   display: flex;
   justify-content: start;
   flex-wrap: nowrap;
@@ -17,25 +15,19 @@
 
 .newslide {
   width: 100%;
-  height: 450px;
 }
 
 .newslide img {
   width: 100%;
-  height: 450px;
   object-fit: cover;
   object-position: 0;
 }
-
-.viewSlider {
-  width: calc(30px * 4);
-  display: flex;
-  justify-content: space-between;
-
+.hidenslidertext{
+  display: none;
 }
 
-.viewSlide {
-  width: 20px;
-  height: 20px;
-  background-color: yellow;
+.slider {
+  margin-left: 400px;
+  padding-top: 50px;
 }
+

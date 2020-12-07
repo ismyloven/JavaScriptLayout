@@ -1,7 +1,10 @@
 
 .mainform {
 	padding-top: 50px;
+	display: none;
 }
+
+
 
 .form_student{
 	background-color: #e7ffa2;

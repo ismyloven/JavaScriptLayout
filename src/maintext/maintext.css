@@ -1,8 +1,12 @@
 .container {
   max-width: 1410px;
   margin: 0 auto;
-
+display: none;
 }
+
+
+
+
 
 .main__text{
   flex-wrap: wrap;

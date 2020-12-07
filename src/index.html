@@ -10,6 +10,7 @@
 			crossorigin="anonymous"></script>
 	<title>Сайт</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="./burgermenu/burgermenu.css">
 	<link rel="stylesheet" href="./footer/footer.css">
 	<link rel="stylesheet" href="./header/header.css">
@@ -18,6 +19,7 @@
 	<link rel="stylesheet" href="./slidershow/slide.css">
 	<link rel="stylesheet" href="./HW19/HW_19%20style.css">
 	<link rel="stylesheet" href="./studentForm/studentform.css">
+	<link rel="stylesheet" href="./main.css">
 </head>
 <body>
 <header>
@@ -90,54 +92,39 @@
 	</div>
 	<div class="main_container">
 
-	<div class="table_class template"  style="display:none;">
+	<div class="table_class template">
 		<label>Enter the number of lines: <input class="input_class" type="text" id="rows">
 		</label></br><label>Enter the number of columns:<input class="input_class" type="text" value="" id="columns"></label></br>
 	<button onclick="addTable()">Create table</button>
 	</div>
 
 
-	<div class="rainbow_buttons template" style="display:none;">
+	<div class="rainbow_buttons rainbows_buttons template">
 		<input id="ton1" value="my button" type="button" class="rainbow"/>
 		<input id="ton2" value="my button" type="button" class="rainbow"/>
 		<input id="ton3" value="my button" type="button" class="rainbow"/>
 	</div>
 
-	<div class="hidenslidertext template" style="display: none;">
-		<div class="viewport">
-			<div class="newslider" style="left: 0;">
-				<div class="newslide"><img src="./slidershow/image/cat1.png" alt="первый слайд"
-																	 title="The little cat wants to drink"></div>
-				<div class="newslide"><img src="./slidershow/image/cat2.png" alt="Второй слайд"
-																	 title="The little cat see the coffee"></div>
-				<div class="newslide"><img src="./slidershow/image/cat3.png" alt="Третий слайд"
-																	 title="The little cat just wants to taste it"></div>
-				<div class="newslide"><img src="./slidershow/image/cat4.png" alt="Четвертый слайд"
-																	 title="The little cat accidentally dropped cup..and run"></div>
+		<div class="slider hidenslidertext template">
 
+			<div class="slider-show">
+
+					<div class="visibleArea">
+						<div class="newslider" style="left: 0">
+							<div class="newslide"><img src="./slidershow/image/cat1.png" alt="1"></div>
+							<div class="newslide"><img src="./slidershow/image/cat2.png" alt="2"></div>
+							<div class="newslide"><img src="./slidershow/image/cat3.png" alt="3"></div>
+							<div class="newslide"><img src="./slidershow/image/cat4.png" alt="4"></div>
+						</div>
+		</div>
 			</div>
-		</div>
+			</div>
 
-		<div class="viewSlider">
-			<div class="viewSlide">1</div>
-			<div class="viewSlide">2</div>
-			<div class="viewSlide">3</div>
-			<div class="viewSlide">4</div>
-		</div>
-		<button class="prev" >&lArr;</button>
-		<button class="next" >&rArr;</button>
+	<div class="videoslider sliderhome template">
+<p> here will be my slider with classes</p>
 	</div>
 
-	<div class="videoslider sliderhome template" style="display:none;">
-		<div class="line">
-			<img class="slide" src="HW19/image/cat1.png" alt="cats">
-			<img class="slide" src="HW19/image/cat2.png" alt="cats">
-			<img class="slide" src="HW19/image/cat3.png" alt="cats">
-			<img class="slide" src="HW19/image/cat4.png" alt="cats">
-		</div>
-	</div>
-
-	<div class="mainform template" style="display: none;">
+	<div class="mainform template ">
 		<h1>A form to fill in</h1>
 		<form>
 		<fieldset class="form_student">
@@ -198,7 +185,7 @@
 
 	</div>
 
-	<main class="container template" style="display:none;">
+	<main class="container template">
 		<div class="main__text">
 			<h1 class="main__header">Введение в JavaScript</h1>
 			<div class="main__header--text">
@@ -464,9 +451,7 @@
 		</ul>
 	</div>
 
-
 </footer>
-<script src ="main.js"></script>
 <script src="HW_js/HW_17_table.js"></script>
 <script src="HW_js/HW_17_timer.js"></script>
 <script src="HW_js/HW_18_userTimer.js"></script>
@@ -474,5 +459,6 @@
 <script src="slidershow/sliderjs.js"></script>
 <script src="HW19/HW_19JS.js"></script>
 <script src="studentForm/studenform.js"></script>
+<script src ="main.js"></script>
 </body>
 </html>
