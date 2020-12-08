@@ -2,9 +2,6 @@
 const slider = document.querySelector(".newslider");
 let score = 0;
 
-
-const startSlide = setInterval(nextSlide, 2000);
-
 function nextSlide() {
 
 	if (score < 3) {
@@ -16,5 +13,5 @@ function nextSlide() {
 	slider.style.left = `${-score * 450 + "px"}`;
 }
 
-startSlide();
+setInterval(nextSlide, 2000);
 

@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script
-			src="https://code.jquery.com/jquery-3.5.1.js"
-			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-			crossorigin="anonymous"></script>
 	<title>Сайт</title>
+	<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnD7XSbi3WHAvzEuSTfwmjIoxxdGWDJvo&callback=initMap&libraries=&v=weekly"
+			defer
+	></script>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="./burgermenu/burgermenu.css">
@@ -19,7 +19,9 @@
 	<link rel="stylesheet" href="./slidershow/slide.css">
 	<link rel="stylesheet" href="./HW19/HW_19%20style.css">
 	<link rel="stylesheet" href="./studentForm/studentform.css">
+	<link rel="stylesheet" href="googleMap/map.css">
 	<link rel="stylesheet" href="./main.css">
+
 </head>
 <body>
 <header>
@@ -75,7 +77,7 @@
 			<li class="hidden-menu_list"><a class="fourthcliker" href="#">CatSlider</a></li>
 			<li class="hidden-menu_list"><a class="fivecliker" href="#">HW:19 slider </a></li>
 			<li class="hidden-menu_list"><a class="sixcliker" href="#">Student Form </a></li>
-			<li class="hidden-menu_list"><a href="#">Итого </a></li>
+			<li class="hidden-menu_list"><a class="sevencliker" href="#">Google Maps </a></li>
 			<li class="hidden-menu_list"><a href="#">Комментарии </a></li>
 			<li class="hidden-menu_list">Поделиться</li>
 			<ul class="icons">
@@ -185,7 +187,7 @@
 
 	</div>
 
-	<main class="container template">
+	<div class="container template">
 		<div class="main__text">
 			<h1 class="main__header">Введение в JavaScript</h1>
 			<div class="main__header--text">
@@ -430,9 +432,14 @@
 				</div>
 			</div>
 		</div>
-	</main>
+	</div>
+
+		<div id="map" class ="xerite google_map template"></div>
+
+
+
 </section>
-</div>
+
 <footer class="footer">
 	<div class="page-footer">
 		<ul class="page-footer__list">
@@ -459,6 +466,7 @@
 <script src="slidershow/sliderjs.js"></script>
 <script src="HW19/HW_19JS.js"></script>
 <script src="studentForm/studenform.js"></script>
+<script src="googleMap/map.js"></script>
 <script src ="main.js"></script>
 </body>
 </html>

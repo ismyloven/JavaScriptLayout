@@ -7,6 +7,7 @@ const defaultValues = {
 		fourthcliker: 'fourthcliker',
 		fivecliker: 'fivecliker',
 		sixcliker : 'sixcliker',
+		sevencliker: 'sevencliker',
 	}
 }
 
@@ -23,6 +24,7 @@ function handler(event) {
 	const fourthcliker = defaultValues.classes.fourthcliker;
 	const fivecliker = defaultValues.classes.fivecliker;
 	const sixcliker = defaultValues.classes.sixcliker;
+	const sevencliker = defaultValues.classes.sevencliker;
 
 	const showTable = document.querySelector(".table_class");
 	const showColorButton = document.querySelector(".rainbow_buttons");
@@ -30,6 +32,7 @@ function handler(event) {
 	const showStudents = document.querySelector(".mainform");
 	const showMain = document.querySelector(".container");
 	const showSlider2 = document.querySelector(".videoslider");
+	const showMap = document.querySelector(".google_map");
 
 	const template = document.querySelectorAll('.template');
 	template.forEach(item => item.classList.add("hide"));
@@ -59,6 +62,10 @@ function handler(event) {
 	if (event.target.className === sixcliker) {
 		showStudents.classList.add("show");
 		showStudents.classList.remove("hide");
+	}
+	if (event.target.className === sevencliker) {
+		showMap.classList.add("show");
+		showMap.classList.remove("hide");
 	}
 }
 

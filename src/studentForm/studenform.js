@@ -54,7 +54,7 @@ function saveResult() {
 
 function deleteResult() {
 	let element = document.querySelectorAll('input[type=checkbox]');
-	console.log(element);
+
 	for (let i = 0; i < element.length; i++) {
 		if (element[i].checked) {
 			let deleteElement = document.querySelector(`.${element[i].name}`);
