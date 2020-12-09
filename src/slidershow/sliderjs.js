@@ -10,7 +10,7 @@ function nextSlide() {
 		score = 0;
 	}
 
-	slider.style.left = `${-score * 450 + "px"}`;
+	slider.style.left = `${-score * 700 + "px"}`;
 }
 
 setInterval(nextSlide, 2000);
