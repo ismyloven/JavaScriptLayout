@@ -40,14 +40,14 @@
 	object-position: 0;
 }
 
-#viewSlider,
+
 #viewSlider2 {
 	width: calc(30px * 4);
 	display: flex;
 	justify-content: space-between;
 }
 
-.viewSlide,
+
 .viewSlide2 {
 	width: 20px;
 	height: 20px;

@@ -1,4 +1,3 @@
-
 const slider = document.querySelector(".newslider");
 let score = 0;
 

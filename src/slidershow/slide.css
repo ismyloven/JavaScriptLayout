@@ -1,33 +1,34 @@
 
 .slider_body {
-  width: 700px;
-  overflow: hidden;
+	width: 700px;
+	overflow: hidden;
 }
 
 .newslider {
-  position: relative;
-  transition: all ease 1s;
-  width: calc(100% * 4);
-  display: flex;
-  justify-content: start;
-  flex-wrap: nowrap;
+	position: relative;
+	transition: all ease 1s;
+	width: calc(100% * 4);
+	display: flex;
+	justify-content: start;
+	flex-wrap: nowrap;
 }
 
 .newslide {
-  width: 100%;
+	width: 100%;
 }
 
 .newslide img {
-  width: 100%;
-  object-fit: cover;
-  object-position: 0;
+	width: 100%;
+	object-fit: cover;
+	object-position: 0;
 }
-.hidenslidertext{
-  display: none;
+
+.hidenslidertext {
+	display: none;
 }
 
 .slider {
-  margin-left: 400px;
-  padding-top: 50px;
+	margin-left: 400px;
+	padding-top: 50px;
 }
 
