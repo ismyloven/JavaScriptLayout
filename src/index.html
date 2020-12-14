@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Сайт</title>
 	<script
-			src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+			src="https://maps.googleapis.com/maps/api/js?key=&callback=initAutocomplete&libraries=places&v=weekly"
 			defer
 	></script>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -466,9 +466,15 @@
 			</div>
 		</div>
 	</div>
-
+		<div>
+		<input
+				id="pac-input"
+				class="controls"
+				type="text"
+				placeholder="Search Box"
+		/>
 		<div id="map" class ="xerite google_map template"></div>
-
+		</div>
 
 
 </section>
