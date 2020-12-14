@@ -55,12 +55,10 @@
 	border-radius: 20%;
 	text-align: center;
 	cursor: pointer;
+	margin-top: 10px;
 }
 
 .fon,
 .viewSlide2:hover {
 	background-color: #aaa;
-}
-.test{
-	height: 300px;
 }

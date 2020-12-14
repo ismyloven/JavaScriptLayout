@@ -1,6 +1,5 @@
 
 
-let startView;
 let dots = document.getElementsByClassName("viewSlide2");
 
 const MainSlider = class  {
@@ -23,6 +22,9 @@ const MainSlider = class  {
 
 		document.querySelector(this.element).style.left = `${-this.scoring * 450 + "px"}`;
 	};
+	slideInterval(start){
+		this.start = setInterval(() => this.handlerNext(), 2000);
+	}
 
 }
 
@@ -35,21 +37,24 @@ class FirstSlider extends MainSlider {
 	}
 
 	buttonNext(nextBtn, element, scoring) {
-		document.querySelector(this.nextBtn).addEventListener("click", () => this.handlerNext())
+		document.querySelector(this.nextBtn).addEventListener("click", () => this.handlerNext());
+		document.querySelector(this.nextBtn).removeEventListener("click", () => this.handlerNext());
 	};
 
-
 	buttonPrev(prevBtn, element, scoring) {
-		document.querySelector(this.prevBtn).addEventListener("click", () => this.handlerPrev())
+		document.querySelector(this.prevBtn).addEventListener("click", () => this.handlerPrev());
+		document.querySelector(this.prevBtn).removeEventListener("click", () => this.handlerPrev());
 	};
 
 	sliderWork(element) {
-		startView = setInterval(() => firstSlide.handlerNext(), 2000);
-	}
+		document.querySelector(this.element).addEventListener("mouseout", () => this.slideInterval());
+		document.querySelector(this.element).removeEventListener("mouseout", () => this.slideInterval());
+	};
 
-	sliderStop(element) {
-		clearTimeout(startView);
-	}
+	sliderStop(element, start) {
+		document.querySelector(this.element).addEventListener("mouseover", () => clearTimeout(this.start));
+		document.querySelector(this.element).removeEventListener("mouseover", () => clearTimeout(this.start));
+	};
 
 }
 
@@ -58,37 +63,35 @@ class SecondSlider extends MainSlider {
 
 	constructor(element) {
 		super(element);
-
 	}
+
+
 	// showDots(element){
-	// 	for (var i = 0; i < dots.length; i++) {
+	// 	for (let i = 0; i < dots.length; i++) {
 	// 		console.log(dots[i]);
-	// 		dots[i] =  firstSlide.buttonNext();
-	// 		console.log(firstSlide.buttonNext());
+	// 		// dots[i] = secondSlide.handlerNext();
+	// 		// element.addEventListener("click", firstSlide.buttonNext());
  	// }
 	// }
+
+
 }
 
 
 let firstSlide = new FirstSlider(".slider2", ".next", ".prev");
 let secondSlide = new SecondSlider(".slider3");
-document.querySelector(".slider2").addEventListener("mouseout", firstSlide.sliderWork);
-document.querySelector(".slider2").addEventListener("mouseover", firstSlide.sliderStop);
+
+firstSlide.slideInterval();
+secondSlide.slideInterval();
+
+
+
+firstSlide.sliderWork();
+firstSlide.sliderStop();
 firstSlide.buttonNext();
 firstSlide.buttonPrev();
 
-
-
-startView = setInterval(() => firstSlide.handlerNext(), 2000);
-setInterval(() => secondSlide.handlerNext(), 2000);
-
-
-// dots.addEventListener("click", secondSlide.showDots());
-
-
-
-
-
+//  secondSlide.showDots();
 // var slideIndex = 1;
 // function showSlides(n) {
 // 	var i;
