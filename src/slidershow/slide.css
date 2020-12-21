@@ -1,34 +1,68 @@
 
-.slider_body {
-	width: 700px;
-	overflow: hidden;
-}
-
-.newslider {
-	position: relative;
-	transition: all ease 1s;
-	width: calc(100% * 4);
-	display: flex;
-	justify-content: start;
-	flex-wrap: nowrap;
-}
-
-.newslide {
-	width: 100%;
-}
-
-.newslide img {
-	width: 100%;
-	object-fit: cover;
-	object-position: 0;
-}
-
-.hidenslidertext {
+.hidenslidertext{
 	display: none;
 }
 
-.slider {
-	margin-left: 400px;
-	padding-top: 50px;
+.slides {
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: 600px;
 }
+
+.slide {
+	align-content: center;
+	color: white;
+	display: grid;
+	font-size: 5em;
+	height: 500px;
+	justify-content: center;
+	position: absolute;
+	transform: translateX(-200%);
+	transition: all .25s;
+}
+
+.slide.next + .slide {
+	transform: translateX(200%);
+}
+
+.slide.prev {
+	transform: translateX(-100%);
+	z-index: 10;
+}
+.slide.current {
+	transform: translateX(0);
+	z-index: 10;
+}
+.slide.next {
+	transform: translateX(100%);
+	z-index: 10;
+}
+
+.controls {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+	justify-content: center;
+}
+
+.button {
+	background-color: transparent;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.kotiki{
+	height: 400px;
+	width: 600px;
+}
+
+
+
+
 
