@@ -5,7 +5,6 @@ const defaultValues = {
 		secondcliker: 'secondcliker',
 		thirdcliker: 'thirdcliker',
 		fourthcliker: 'fourthcliker',
-		fivecliker: 'fivecliker',
 		sixcliker : 'sixcliker',
 		sevencliker: 'sevencliker',
 	}
@@ -22,7 +21,6 @@ function handler(event) {
 	const secondcliker = defaultValues.classes.secondcliker;
 	const thirdcliker = defaultValues.classes.thirdcliker;
 	const fourthcliker = defaultValues.classes.fourthcliker;
-	const fivecliker = defaultValues.classes.fivecliker;
 	const sixcliker = defaultValues.classes.sixcliker;
 	const sevencliker = defaultValues.classes.sevencliker;
 
@@ -31,7 +29,6 @@ function handler(event) {
 	const showSlider = document.querySelector(".hidenslidertext");
 	const showStudents = document.querySelector(".mainform");
 	const showMain = document.querySelector(".container");
-	const showSlider2 = document.querySelector(".videoslider");
 	const showMap = document.querySelector(".google_map");
 
 	const template = document.querySelectorAll('.template');
@@ -55,10 +52,7 @@ function handler(event) {
 		showSlider.classList.add("show");
 		showSlider.classList.remove("hide");
 	}
-	if (event.target.className === fivecliker) {
-		showSlider2.classList.add("show");
-		showSlider2.classList.remove("hide");
-	}
+
 	if (event.target.className === sixcliker) {
 		showStudents.classList.add("show");
 		showStudents.classList.remove("hide");
